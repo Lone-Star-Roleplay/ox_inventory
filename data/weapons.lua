@@ -1,5 +1,1070 @@
 return {
 	Weapons = {
+		['WEAPON_SLEDGEHAMMER'] = {
+			--youtool?
+			label = 'Sledgehammer',
+			weight = 2250,
+			durability = 100/1000,
+		},
+
+		['WEAPON_GLOCK19GEN4'] = {
+			--police station, gunstore
+			label = 'GLOCK 19 Gen 4',
+			weight = 700,
+			durability = 100/5000,
+			ammoname = 'ammo-9',
+		},
+
+		--Gunstore, gun show, blackmarket, random finds (dumpster? scrapyard?)
+		['WEAPON_BASEBALLBAT'] = {
+			-- gunstore ✅,random finds often 90/100
+			label = 'Baseball Bat',
+			weight = 1134,
+			durability = 0.1,
+		},
+
+		['WEAPON_BLOODYCROWBAR'] = {
+			-- random find rare 15/100
+			label = 'Bloody Crowbar',
+			weight = 2500, -- Heavier due to metal construction (2.5kg)
+			durability = 100 / 90.0, -- Very durable
+		},
+
+		['WEAPON_BOWIE'] = {
+			-- hunting store or blackmarket
+			label = 'Bowie Knife',
+			weight = 1200, -- Heavy hunting knife (1.2kg)
+			durability = 100 / 85.0,
+		},
+
+		['WEAPON_BREAD'] = {
+			-- sceanario use only, lower damage
+			label = 'Bread',
+			weight = 300, -- Lightweight, just a loaf of bread (300g)
+			durability = 100 / 30.0, -- Easily damaged
+		},
+
+		['WEAPON_CRUTCH'] = {
+			-- random find dumpster rare 70/100
+			label = 'Crutch',
+			weight = 1000, -- Plastic or lightweight metal (1kg)
+			durability = 100 / 40.0, -- Breakable
+		},
+
+		['WEAPON_FASTHAWK'] = {
+			-- faction weapon drop
+			label = 'Fast Hawk',
+			weight = 1500, -- Lightweight throwing axe (1.5kg)
+			durability = 100 / 80.0
+		},
+
+		['WEAPON_HORSEBAT'] = {
+			-- scenario based/ need image
+			label = 'Horse Bat',
+			weight = 2000, -- Heavy bat (2kg)
+			durability = 100 / 85.0
+		},
+
+		['WEAPON_KATANASWORD'] = {
+			-- faction weapon drop, change sound to weapon_knife
+			label = 'Katana Sword',
+			weight = 2800, -- Traditional katana weight (2.8kg)
+			durability = 100 / 95.0
+		},
+
+		['WEAPON_KIRITOSSWORD'] = {
+			-- julios
+			label = 'Kirito’s Sword',
+			weight = 2000, -- Heavier sword (2kg)
+			durability = 100 / 90.0
+		},
+
+		['WEAPON_LONGSWORD'] = {
+			-- gunshow
+			label = 'Longsword',
+			weight = 3500, -- Heavy, medieval-style sword (3.5kg)
+			durability = 100 / 95.0
+		},
+
+		['WEAPON_MACHETE2'] = {
+			-- use this image weapon_machettee, random find (trash and car chop) 70/100
+			label = 'Machete Mark II',
+			weight = 2000, -- Slightly heavier variant (2kg)
+			durability = 100 / 90.0
+		},
+
+		['WEAPON_REAPER'] = {
+			-- sceanario based
+			label = 'Reaper Scythe',
+			weight = 4000, -- Very heavy weapon (4kg)
+			durability = 100 / 100.0
+		},
+
+		['WEAPON_SCREWDRIVER'] = {
+			-- sceanario or youtool to replace other screwdriver
+			label = 'Screwdriver',
+			weight = 500, -- Lightweight tool (500g)
+			durability = 100 / 50.0
+		},
+
+		['WEAPON_SLIPPER'] = {
+			-- random find 75/100
+			label = 'Slipper',
+			weight = 200, -- 0.2 kg
+			durability = 100 / 20.0 -- Very fragile
+		},
+
+		['WEAPON_TIGERBLADE'] = {
+			-- gunshow, needs image
+			label = 'Tiger Blade',
+			weight = 2500, -- Heavy blade (2.5kg)
+			durability = 100 / 90.0
+		},
+
+		['WEAPON_TOMAHAWK'] = {
+			-- blackmarket ✅ 
+			label = 'Tomahawk',
+			weight = 1200, -- Lightweight axe (1.2kg)
+			durability = 100 / 80.0
+		},
+
+		['WEAPON_AXE'] = {
+			-- U tool ✅
+			label = 'Axe',
+			weight = 2500, -- Standard axe (2.5kg)
+			durability = 100 / 90.0
+		},
+
+		--[[['WEAPON_BRICK'] = {
+			-- make throwable or delete
+			label = 'Brick',
+			weight = 2000, -- Heavy brick (2kg)
+			stack = true,
+			durability = 100 -- Can break easily
+		},]]
+
+		['WEAPON_GLOCK20VA5'] = {
+			-- black market ✅ , 35k
+			label = 'Glock 20 VA5',
+			weight = 800, -- Standard Glock variant (800g)
+			durability = 0.02,
+			ammoname = 'ammo-9',
+		},
+
+		['WEAPON_SALIENTGLOCK'] = {
+			-- black market ✅
+			label = 'Salient Glock',
+			weight = 800, -- Another Glock variant (800g)
+			durability = 0.02,
+			ammoname = 'ammo-9',
+		},
+
+		['WEAPON_TBSPROKOLOT'] = {
+			--gunshoww
+			label = 'TBS Pro Kolot',
+			weight = 1000, -- Heavier pistol (1kg)
+			durability = 0.03,
+			ammoname = 'ammo-9',
+		},
+
+		['WEAPON_TECHG17'] = {
+			--gunshow
+			label = 'Tech G17',
+			weight = 800, -- Lightweight pistol (800g)
+			durability = 0.02,
+			ammoname = 'ammo-9',
+		},
+
+		['WEAPON_CHROMATICDEAGLE'] = {
+			-- gunshow
+			label = 'Chromatic Desert Eagle',
+			weight = 1500, -- Heavy Desert Eagle (1.5kg)
+			durability = 0.04,
+			ammoname = 'ammo-45',
+		},
+
+		['WEAPON_DEAGLEKILLCONFIRMED'] = {
+			--gunshow
+			label = 'Desert Eagle Kill Confirmed',
+			weight = 1500, -- Standard Desert Eagle weight (1.5kg)
+			durability = 0.04,
+			ammoname = 'ammo-45',
+		},
+
+		['WEAPON_DEAGLELV'] = { -- flip colors
+		-- gunshow
+			label = 'Desert Eagle LV',
+			weight = 1500, -- Heavy Desert Eagle variant (1.5kg)
+			durability = 0.04,
+			ammoname = 'ammo-45',
+		},
+
+		['WEAPON_DESERTEAGLESILVER'] = {
+			-- gunstore ✅
+			label = 'Desert Eagle Silver',
+			weight = 1500, -- Heavier variant (1.5kg)
+			durability = 0.04,
+			ammoname = 'ammo-45',
+		},
+
+		['WEAPON_FRACTLEBLUE'] = { 
+			-- gunshow
+			label = 'Fractle Blue',
+			weight = 950, -- Custom pistol (950g)
+			durability = 0.02,
+			ammoname = 'ammo-9',
+		},
+
+		['WEAPON_GALAXY1911'] = {
+			-- gunshow
+			label = 'Galaxy 1911',
+			weight = 1200, -- Standard 1911 weight (1.2kg)
+			durability = 0.03,
+			ammoname = 'ammo-45',
+		},
+
+		['WEAPON_LIZARDDEAGLE'] = {
+				-- ethans gun
+			label = 'Lizard Desert Eagle',
+			weight = 1500, -- Heavy Desert Eagle (1.5kg)
+			durability = 0.04,
+			ammoname = 'ammo-45',
+		},
+
+		['WEAPON_P30L'] = {
+			-- gunstore
+			label = 'P30L',
+			weight = 1000, -- Medium-weight pistol (1kg)
+			durability = 0.03,
+			ammoname = 'ammo-9',
+		},
+
+		['WEAPON_SIGSAUERM17'] = {
+			-- gunstore
+			label = 'Sig Sauer M17',
+			weight = 1100, -- Standard M17 weight (1.1kg)
+			durability = 0.03,
+			ammoname = 'ammo-9',
+		},
+
+		['WEAPON_THEGLIZZY'] = {  -- limited edition,laser/light dont work
+			label = 'The Glizzy',
+			weight = 1100, -- Heavier handgun (1.1kg)
+			durability = 0.03,
+			ammoname = 'ammo-9',
+		},
+
+		['WEAPON_WALTHERP88'] = {
+			-- gunshow 
+			label = 'Walther P88',
+			weight = 1000, -- Medium-weight pistol (1kg)
+			durability = 0.03,
+			ammoname = 'ammo-9',
+		},
+
+		-- Assault Rifles Entries
+
+		['WEAPON_NOVESKENSR9'] = {
+			label = 'Noveske NSR9',
+			weight = 3400, -- Slightly lighter assault rifle (3.4kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},
+
+		['WEAPON_MKC1'] = { 
+			label = 'MK C1',
+			weight = 3600, -- Standard rifle weight (3.6kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},
+
+		['WEAPON_ACR1'] = {
+			label = 'ACR 1',
+			weight = 3500, -- Standard ACR weight (3.5kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},
+
+		['WEAPON_AEK971'] = {
+			--gunshow
+			label = 'AEK-971',
+			weight = 3550, -- Medium-weight assault rifle (3.55kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},
+
+		['WEAPON_AK74GLOW'] = {
+			-- gunshow
+			label = 'AK-74 Glow',
+			weight = 3600, -- Custom AK-74 with glow (3.6kg)
+			durability = 0.06,
+			ammoname = 'ammo-rifle2',
+		},
+
+		--[[['WEAPON_AKCQB'] = {
+			label = 'AK CQB',
+			weight = 3600, -- Compact AK variant (3.6kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle2',
+		},]]
+
+		--[[['WEAPON_AKSAKURA'] = {
+			label = 'AK Sakura',
+			weight = 3700, -- Heavier AK variant (3.7kg)
+			durability = 0.06,
+			ammoname = 'ammo-rifle2',
+		},]]
+
+		--[[['WEAPON_AN94'] = {
+			label = 'AN-94',
+			weight = 3500, -- Standard AN-94 weight (3.5kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle2',
+		},]]
+
+		--[[['WEAPON_ANARCHY'] = {
+			label = 'Anarchy Rifle',
+			weight = 3600, -- Medium-weight rifle (3.6kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},]]
+
+		--[[['WEAPON_BAL27'] = {
+			label = 'BAL-27',
+			weight = 3700, -- Heavier assault rifle (3.7kg)
+			durability = 0.06,
+			ammoname = 'ammo-rifle',
+		},]]
+
+		--[[['WEAPON_BEANAR15'] = {
+			label = 'Bean AR-15',
+			weight = 3400, -- Lighter AR-15 variant (3.4kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},]]
+
+		--[[['WEAPON_BF4'] = {
+			label = 'BF4 Assault Rifle',
+			weight = 3600, -- Medium-weight assault rifle (3.6kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},]]
+
+		['WEAPON_COLTM4A1'] = {
+			-- pd
+			label = 'Colt M4A1',
+			weight = 3500, -- Standard M4A1 weight (3.5kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},
+
+		--[[['WEAPON_CR'] = {
+			label = 'CR Assault Rifle',
+			weight = 3600, -- Medium-weight rifle (3.6kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},]]
+
+		['WEAPON_CUSTOMM4A1'] = {
+			-- pd
+			label = 'Custom M4A1',
+			weight = 3400, -- Slightly lighter custom M4A1 (3.4kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},
+
+		--[[['WEAPON_DARKKNIGHTAK'] = { -- doesnt load
+			label = 'Dark Knight AK',
+			weight = 3700, -- Heavier AK variant (3.7kg)
+			durability = 0.06,
+			ammoname = 'ammo-rifle2',
+		},]]
+
+		--[[['WEAPON_DDMK18'] = { -- doesnt load
+			label = 'DD MK18',
+			weight = 3500, -- Standard MK18 weight (3.5kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},]]
+
+		--[[['WEAPON_DEVGRU'] = {
+			label = 'DEVGRU Rifle',
+			weight = 3400, -- Lightweight assault rifle (3.4kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},]]
+
+		['WEAPON_G27'] = {
+			-- pd or faction drop
+			label = 'G27 Rifle',
+			weight = 3500, -- Medium-weight rifle (3.5kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},
+
+		--[[['WEAPON_GRAU'] = {
+			label = 'GRAU',
+			weight = 3400, -- Lighter assault rifle (3.4kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},]]
+
+		--[[['WEAPON_GURA'] = {
+			-- gunshow or remove
+			label = 'GURA Rifle',
+			weight = 3550, -- Medium-weight rifle (3.55kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},]]
+
+		--[[['WEAPON_H416'] = {
+			label = 'H416',
+			weight = 3500, -- Standard H416 weight (3.5kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},]]
+
+		--[[['WEAPON_HAWKM4'] = {
+			label = 'Hawk M4',
+			weight = 3400, -- Lightweight M4 variant (3.4kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},]]
+
+		['WEAPON_HK416A'] = {
+			-- pd
+			label = 'HK 416 A',
+			weight = 3500, -- Standard HK 416 (3.5kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},
+
+		--[[['WEAPON_HK416B'] = {
+			label = 'HK 416 B',
+			weight = 3500, -- Standard HK 416 variant (3.5kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},]]
+
+		--[[['WEAPON_HK418'] = {
+			label = 'HK 418',
+			weight = 3700, -- Heavier HK variant (3.7kg)
+			durability = 0.06,
+			ammoname = 'ammo-rifle',
+		},]]
+
+		--[[['WEAPON_HONEYBADGER'] = {
+			label = 'Honey Badger',
+			weight = 3400, -- Lightweight rifle (3.4kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},]]
+		['WEAPON_HOS'] = {
+			-- FACTION DROP
+			label = 'HOS Rifle',
+			weight = 3550, -- Medium-weight rifle (3.55kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},
+
+		['WEAPON_HOTSHOTWELDER'] = {
+			-- black market?
+			label = 'Hotshot Welder',
+			weight = 3600, -- Standard rifle weight (3.6kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},
+
+		['WEAPON_IBAK'] = {
+			-- gunshow
+			label = 'IBAK Rifle',
+			weight = 3500, -- Medium-weight rifle (3.5kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},
+
+		['WEAPON_ICEDRAKE'] = {
+			-- gunshow rare
+			label = 'Icedrake Rifle',
+			weight = 3550, -- Medium-weight rifle (3.55kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},
+
+		--[[['WEAPON_LR300S'] = {
+			label = 'LR300 S',
+			weight = 3600, -- Standard LR300 weight (3.6kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},]]
+
+		['WEAPON_LR300WHITE'] = {
+			-- gunshow rare
+			label = 'LR300 White',
+			weight = 3600, -- Standard LR300 weight (3.6kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},
+
+		--[[['WEAPON_M4A1CMG'] = {
+			label = 'M4A1 CMG',
+			weight = 3400, -- Lighter M4A1 variant (3.4kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},]]
+
+		['WEAPON_M4A1SPURPLE'] = {
+			--gunshow
+			label = 'M4A1 S Purple',
+			weight = 3400, -- Lighter M4A1 variant (3.4kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},
+
+		--[[['WEAPON_M4A1T'] = {
+			label = 'M4A1 T',
+			weight = 3400, -- Lighter M4A1 variant (3.4kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},]]
+
+		['WEAPON_M4A1WHITENOISE'] = { -- scope broken/ needs 30 round mag not 60
+			label = 'M4A1 White Noise',
+			weight = 3400, -- Lighter M4A1 variant (3.4kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},
+
+		['WEAPON_M4A4FIRE'] = {
+			-- gunshow
+			label = 'M4A4 Fire',
+			weight = 3500, -- Standard M4A4 weight (3.5kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},
+
+		['WEAPON_M4A4PRINTSTREAM'] = {
+			-- gunshow
+			label = 'M4A4 Printstream',
+			weight = 3500, -- Standard M4A4 weight (3.5kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},
+
+		--[[['WEAPON_M4ASSAULTRIFLE'] = {
+			label = 'M4 Assault Rifle',
+			weight = 3400, -- Lighter M4 variant (3.4kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},]]
+
+		--[[['WEAPON_M4CMG'] = {
+			label = 'M4 CMG',
+			weight = 3400, -- Lightweight M4 variant (3.4kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},]]
+
+		['WEAPON_M4HYPERBEAST'] = {
+			-- gunshow
+			label = 'M4 Hyperbeast',
+			weight = 3400, -- Lightweight M4 variant (3.4kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},
+
+		['WEAPON_M4PRINTSTREAM'] = {
+			-- gunshow
+			label = 'M4 Printstream',
+			weight = 3400, -- Lightweight M4 variant (3.4kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},
+
+		['WEAPON_M4WAGESOFSIN'] = {
+			-- gunshow
+			label = 'M4 Wages of Sin',
+			weight = 3400, -- Lightweight M4 variant (3.4kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},
+
+		--[[['WEAPON_M16A1'] = {
+			label = 'M16A1',
+			weight = 3550, -- Medium-weight M16 variant (3.55kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},]]
+
+		--[[['WEAPON_M16A2'] = {
+			label = 'M16A2',
+			weight = 3550, -- Medium-weight M16 variant (3.55kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},]]
+		--[[['WEAPON_M16A4'] = {
+			label = 'M16A4',
+			weight = 3550, -- Medium-weight M16 variant (3.55kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},]]
+
+		['WEAPON_NSR9'] = {
+			-- pd
+			label = 'NSR9',
+			weight = 3400, -- Lightweight NSR9 (3.4kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},
+
+		--[[['WEAPON_NV4'] = {
+			label = 'NV4',
+			weight = 3500, -- Standard NV4 weight (3.5kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},]]
+
+		--[[['WEAPON_P416'] = {
+			label = 'P416',
+			weight = 3500, -- Standard P416 weight (3.5kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},]]
+
+		--[[['WEAPON_PDM4A4'] = { -- scope broke
+			label = 'PD M4A4',
+			weight = 3500, -- Standard M4A4 weight (3.5kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},]]
+
+		['WEAPON_PDMK18'] = {
+			-- pd
+			label = 'PD MK18',
+			weight = 3500, -- Standard MK18 weight (3.5kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},
+
+		--[[['WEAPON_RE6'] = {
+			label = 'RE6 Rifle',
+			weight = 3550, -- Medium-weight RE6 (3.55kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},]]
+
+		['WEAPON_TACTICALAK47'] = {
+			-- faction drop
+			label = 'Tactical AK47',
+			weight = 3600, -- Standard Tactical AK47 weight (3.6kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},
+
+		['WEAPON_TACTICALCARBINERIFLE'] = {
+			-- gunshow
+			label = 'Tactical Carbine Rifle',
+			weight = 3600, -- Standard Carbine Rifle weight (3.6kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},
+
+		--[[['WEAPON_TAR21'] = {
+			label = 'TAR21',
+			weight = 3500, -- Standard TAR21 weight (3.5kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},]]
+
+		['WEAPON_WFREDTIGER'] = {
+			-- gunshow
+			label = 'WF Red Tiger',
+			weight = 3600, -- Medium-weight rifle (3.6kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},
+
+		['WEAPON_XM4TIGER'] = {
+			-- gunshow
+			label = 'XM4 Tiger',
+			weight = 3600, -- Medium-weight XM4 (3.6kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},
+
+		--[[['WEAPON_SPAR16'] = {
+			label = 'Spar 16',
+			weight = 3500, -- Standard Spar 16 weight (3.5kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},]]
+
+		--[[['WEAPON_SPAR17'] = {
+			label = 'Spar 17',
+			weight = 3500, -- Standard Spar 17 weight (3.5kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},]]
+
+		--[[['WEAPON_MCX2'] = {
+			label = 'MCX2',
+			weight = 2600, -- Slightly heavier version (2.6kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},]]
+
+		['WEAPON_MCX3'] = { -- fix mag 60 to 30
+			label = 'MCX3',
+			weight = 2700, -- Heavier variant (2.7kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},
+
+		--[[['WEAPON_MK18'] = {
+			label = 'MK18',
+			weight = 2500, -- Standard weight (2.5kg)
+			durability = 0.05,
+			ammoname = 'ammo-9',
+		},]]
+
+		['WEAPON_MP40'] = { -- clip in weird spot change class to smg
+			label = 'MP40',
+			weight = 2700, -- Standard MP40 weight (2.7kg)
+			durability = 0.05,
+			ammoname = 'ammo-9',
+		},
+
+		['WEAPON_SP1'] = {
+			label = 'SP1',
+			weight = 2400, -- Lightweight (2.4kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},
+
+		['WEAPON_MP5V3'] = {
+			label = 'MP5 V3',
+			weight = 2500, -- Standard MP5 weight (2.5kg)
+			durability = 0.05,
+			ammoname = 'ammo-9',
+		},
+
+		['WEAPON_BLACKICEPEACEKEEPER'] = {
+			label = 'Black Ice Peacekeeper',
+			weight = 2500, -- Standard weight (2.5kg)
+			durability = 0.05,
+			ammoname = 'ammo-9',
+		},
+
+		['WEAPON_COLDHUNTERMP5'] = {
+			label = 'Cold Hunter MP5',
+			weight = 2600, -- Slightly heavier (2.6kg)
+			durability = 0.05,
+			ammoname = 'ammo-9',
+		},
+
+		['WEAPON_COLDHUNTERTHOMPSON'] = { -- strokes barrel
+			label = 'Cold Hunter Thompson',
+			weight = 2700, -- Slightly heavier (2.7kg)
+			durability = 0.05,
+			ammoname = 'ammo-9',
+		},
+
+		['WEAPON_DARKMATTERMP5'] = {
+			label = 'Dark Matter MP5',
+			weight = 2500, -- Standard weight (2.5kg)
+			durability = 0.05,
+			ammoname = 'ammo-9',
+		},
+
+		['WEAPON_DIAMONDMP5'] = {
+			label = 'Diamond MP5',
+			weight = 2500, -- Standard weight (2.5kg)
+			durability = 0.05,
+			ammoname = 'ammo-9',
+		},
+
+		['WEAPON_DSSMG'] = {
+			label = 'DSS MG',
+			weight = 2700, -- Medium-weight (2.7kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},
+
+		['WEAPON_HKUMP'] = {
+			label = 'HK UMP',
+			weight = 2600, -- Slightly heavier (2.6kg)
+			durability = 0.05,
+			ammoname = 'ammo-9',
+		},
+
+		['WEAPON_M12'] = {
+			label = 'M12',
+			weight = 2600, -- Slightly heavier (2.6kg)
+			durability = 0.05,
+			ammoname = 'ammo-9',
+		},
+
+		['WEAPON_MAC10'] = {
+			label = 'MAC10',
+			weight = 2500, -- Standard weight (2.5kg)
+			durability = 0.05,
+			ammoname = 'ammo-9',
+		},
+
+		['WEAPON_MK16'] = {
+			label = 'MK16',
+			weight = 2700, -- Medium-weight (2.7kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle2',
+		},
+
+		['WEAPON_MP5CMG'] = {
+			label = 'MP5 CMG',
+			weight = 2500, -- Standard MP5 weight (2.5kg)
+			durability = 0.05,
+			ammoname = 'ammo-9',
+		},
+
+		['WEAPON_MP5SD'] = {
+			label = 'MP5 SD',
+			weight = 2600, -- Slightly heavier (2.6kg)
+			durability = 0.05,
+			ammoname = 'ammo-9',
+		},
+
+		['WEAPON_MP9'] = {
+			label = 'MP9',
+			weight = 2500, -- Standard MP9 weight (2.5kg)
+			durability = 0.05,
+			ammoname = 'ammo-smh',
+		},
+
+		['WEAPON_MPXC'] = {
+			label = 'MPXC',
+			weight = 2500, -- Standard weight (2.5kg)
+			durability = 0.05,
+			ammoname = 'ammo-9',
+		},
+
+		['WEAPON_MSMC'] = {
+			label = 'MSMC',
+			weight = 2700, -- Heavier variant (2.7kg)
+			durability = 0.05,
+			ammoname = 'ammo-rifle',
+		},
+
+		['WEAPON_PDW'] = {
+			label = 'PDW',
+			weight = 2600, -- Slightly heavier (2.6kg)
+			durability = 0.05,
+			ammoname = 'ammo-9',
+		},
+
+		['WEAPON_STING'] = {
+			label = 'Sting',
+			weight = 2500, -- Standard weight (2.5kg)
+			durability = 0.05,
+			ammoname = 'ammo-9',
+		},
+
+		['WEAPON_THOMPSON'] = {
+			label = 'Thompson',
+			weight = 2700, -- Standard Thompson weight (2.7kg)
+			durability = 0.05,
+			ammoname = 'ammo-9',
+		},
+
+		['WEAPON_PP19'] = {
+			label = 'PP19',
+			weight = 2500, -- Standard weight (2.5kg)
+			durability = 0.05,
+			ammoname = 'ammo-9',
+		},
+
+		['WEAPON_DEADPOOLSHOTGUN'] = {
+			label = 'Deadpool Shotgun',
+			weight = 3400, -- Heavyweight (3.4kg)
+			durability = 0.05,
+			ammoname = 'ammo-shotgun',
+		},
+
+		['WEAPON_FOSTECHORIGIN12'] = {
+			label = 'Fostech Origin 12',
+			weight = 3500, -- Heavier shotgun (3.5kg)
+			durability = 0.05,
+			ammoname = 'ammo-shotgun',
+		},
+
+		['WEAPON_HEYMAKER'] = {
+			label = 'Haymaker',
+			weight = 3400, -- Heavyweight (3.4kg)
+			durability = 0.05,
+			ammoname = 'ammo-shotgun',
+		},
+
+		['WEAPON_JAK12'] = {
+			label = 'JAK12',
+			weight = 3400, -- Heavyweight (3.4kg)
+			durability = 0.05,
+			ammoname = 'ammo-shotgun',
+		},
+
+		['WEAPON_MOSSBERG'] = {
+			label = 'Mossberg',
+			weight = 3300, -- Slightly lighter (3.3kg)
+			durability = 0.05,
+			ammoname = 'ammo-shotgun',
+		},
+
+		['WEAPON_SPAZ'] = {
+			label = 'SPAZ',
+			weight = 3400, -- Heavyweight (3.4kg)
+			durability = 0.05,
+			ammoname = 'ammo-shotgun',
+		},
+
+		['WEAPON_THESECRETFORMULA'] = {
+			label = 'The Secret Formula',
+			weight = 3500, -- Heavier shotgun (3.5kg)
+			durability = 0.05,
+			ammoname = 'ammo-shotgun',
+		},
+
+		['WEAPON_M203'] = {
+			label = 'M203',
+			weight = 6300, -- Heavy LMG (6.3kg)
+			durability = 0.04,
+			ammoname = 'ammo-rifle',
+		},
+
+		['WEAPON_MAVERICK'] = {
+			label = 'Maverick',
+			weight = 6400, -- Heavy LMG (6.4kg)
+			durability = 0.04,
+			ammoname = 'ammo-rifle',
+		},
+
+		['WEAPON_RE6RN'] = {
+			label = 'RE6 RN',
+			weight = 6100, -- Heavy LMG (6.1kg)
+			durability = 0.04,
+			ammoname = 'ammo-rifle',
+		},
+
+		['WEAPON_SSMCX'] = {
+			label = 'SSMCX',
+			weight = 6000, -- Heavy LMG (6.0kg)
+			durability = 0.04,
+			ammoname = 'ammo-rifle',
+		},
+
+		['WEAPON_MK1EMR'] = {
+			label = 'MK1 EMR',
+			weight = 6800, -- Heavy marksman rifle (6.8kg)
+			durability = 0.04,
+			ammoname = 'ammo-rifle',
+		},
+
+		['WEAPON_PARAFAL'] = {
+			label = 'Parafal',
+			weight = 6900, -- Heavy marksman rifle (6.9kg)
+			durability = 0.04,
+			ammoname = 'ammo-rifle',
+		},
+
+		['WEAPON_PARAFALSOULREAPER'] = {
+			label = 'Parafal Soul Reaper',
+			weight = 7000, -- Heavy marksman rifle (7.0kg)
+			durability = 0.03,
+			ammoname = 'ammo-rifle',
+		},
+
+		['WEAPON_M82A3'] = {
+			label = 'M82A3',
+			weight = 8000, -- Very heavy sniper rifle (8.0kg)
+			durability = 0.02,
+			ammoname = 'ammo-sniper',
+		},
+
+		['WEAPON_ORSIST5000'] = {
+			label = 'Orsist 5000',
+			weight = 7500, -- Heavy sniper rifle (7.5kg)
+			durability = 0.03,
+			ammoname = 'ammo-sniper',
+		},
+
+		['WEAPON_BARRETCMG'] = {
+			label = 'Barret CMG',
+			weight = 8200, -- Very heavy sniper rifle (8.2kg)
+			durability = 0.02,
+			ammoname = 'ammo-sniper',
+		},
+
+		['WEAPON_BARRETM98'] = {
+			label = 'Barret M98',
+			weight = 7900, -- Heavy sniper rifle (7.9kg)
+			durability = 0.03,
+			ammoname = 'ammo-sniper',
+		},
+
+		['WEAPON_BORA'] = {
+			label = 'Bora',
+			weight = 7400, -- Heavy sniper rifle (7.4kg)
+			durability = 0.03,
+			ammoname = 'ammo-sniper',
+		},
+
+		['WEAPON_L115A1'] = {
+			label = 'L115A1',
+			weight = 7600, -- Heavy sniper rifle (7.6kg)
+			durability = 0.03,
+			ammoname = 'ammo-sniper',
+		},
+
+		['WEAPON_M82A2'] = {
+			label = 'M82A2',
+			weight = 7800, -- Heavy sniper rifle (7.8kg)
+			durability = 0.03,
+			ammoname = 'ammo-sniper',
+		},
+
+		['WEAPON_M98B'] = {
+			label = 'M98B',
+			weight = 7700, -- Heavy sniper rifle (7.7kg)
+			durability = 0.03,
+			ammoname = 'ammo-sniper',
+		},
+
+		['WEAPON_RE6CMG'] = {
+			label = 'RE6 CMG',
+			weight = 7400, -- Heavy sniper rifle (7.4kg)
+			durability = 0.03,
+			ammoname = 'ammo-sniper',
+		},
+
+		['WEAPON_STAC'] = {
+			label = 'STAC',
+			weight = 7200, -- Heavy sniper rifle (7.2kg)
+			durability = 0.03,
+			ammoname = 'ammo-sniper',
+		},
+
+		['WEAPON_PAINTBALL'] = { -- add paintball bullet
+			label = 'Paintball Gun',
+			weight = 2000, -- Light weight (2.0kg)
+			durability = 0.05,
+			ammoname = 'ammo-9',
+		},
+
+		--HANDGUNS
+		['WEAPON_GLOCK19X'] = {
+			--gunstore
+			label = 'Glock 19X',
+			weight = 785,
+			durability = 0.2,
+			ammoname = 'ammo-9',
+		},
+		
 		['WEAPON_BATTLERIFLE'] = {
 			label = 'Battle Rifle',
 			weight = 3300,
@@ -29,8 +1094,9 @@ return {
 		},
 
 		['WEAPON_APPISTOL'] = {
-			label = 'AP Pistol',
-			weight = 1400,
+			--faction drop
+			label = 'Glock 18',
+			weight = 900,
 			durability = 0.1,
 			ammoname = 'ammo-9',
 		},
@@ -129,6 +1195,7 @@ return {
 		},
 
 		['WEAPON_CERAMICPISTOL'] = {
+			-- gunstore
 			label = 'Ceramic Pistol',
 			weight = 800,
 			durability = 0.2,
@@ -136,6 +1203,7 @@ return {
 		},
 
 		['WEAPON_PISTOLXM3'] = {
+			-- gunstore
 			label = 'WM 29 Pistol',
 			weight = 969,
 			durability = 0.2,
@@ -157,6 +1225,7 @@ return {
 		},
 
 		['WEAPON_COMBATPDW'] = {
+			--sm, faction drop
 			label = 'Combat PDW',
 			weight = 2300,
 			durability = 0.1,
@@ -164,6 +1233,7 @@ return {
 		},
 
 		['WEAPON_COMBATPISTOL'] = {
+			--gunstore
 			label = 'Combat Pistol',
 			weight = 785,
 			durability = 0.2,
@@ -227,7 +1297,7 @@ return {
 		['WEAPON_FIREEXTINGUISHER'] = {
 			label = 'Fire Extinguisher',
 			weight = 8616,
-            durability = 0.006
+			durability = 0.006
 		},
 
 		['WEAPON_FIREWORK'] = {
@@ -464,6 +1534,7 @@ return {
 		},
 
 		['WEAPON_GADGETPISTOL'] = {
+			--No
 			label = 'Perico Pistol',
 			weight = 1750,
 			durability = 0.1,
@@ -477,6 +1548,7 @@ return {
 		},
 
 		['WEAPON_PISTOL'] = {
+			--gunstore
 			label = 'Pistol',
 			weight = 1130,
 			durability = 0.1,
@@ -484,6 +1556,7 @@ return {
 		},
 
 		['WEAPON_PISTOL50'] = {
+			--gunstore
 			label = 'Pistol .50',
 			weight = 2000,
 			durability = 0.1,
@@ -491,6 +1564,7 @@ return {
 		},
 
 		['WEAPON_PISTOL_MK2'] = {
+			--gunstore
 			label = 'Pistol MK2',
 			weight = 1000,
 			durability = 0.5,
@@ -557,6 +1631,7 @@ return {
 		},
 
 		['WEAPON_REVOLVER'] = {
+			--gunstore
 			label = 'Revolver',
 			weight = 2260,
 			durability = 0.1,
@@ -564,6 +1639,7 @@ return {
 		},
 
 		['WEAPON_REVOLVER_MK2'] = {
+			--gunstore
 			label = 'Revolver MK2',
 			weight = 2600,
 			durability = 0.1,
@@ -618,6 +1694,7 @@ return {
 		},
 
 		['WEAPON_SNSPISTOL'] = {
+			--gunstore
 			label = 'SNS Pistol',
 			weight = 465,
 			durability = 0.1,
@@ -625,6 +1702,7 @@ return {
 		},
 
 		['WEAPON_SNSPISTOL_MK2'] = {
+			--gunstore
 			label = 'SNS Pistol MK2',
 			weight = 465,
 			durability = 0.1,
@@ -658,6 +1736,7 @@ return {
 		},
 
 		['WEAPON_STUNGUN'] = {
+			--PD taser?
 			label = 'Tazer',
 			weight = 227,
 			durability = 0.1,
@@ -678,6 +1757,7 @@ return {
 		},
 
 		['WEAPON_VINTAGEPISTOL'] = {
+			--gunstore
 			label = 'Vintage Pistol',
 			weight = 700,
 			durability = 0.1,
@@ -710,12 +1790,6 @@ return {
 			durability = 0.03,
 			ammoname = 'ammo-rifle'
 		},
-
-		['WEAPON_TEARGAS'] = {
-			label = 'Tear Gas',
-			weight = 600,
-			throwable = true,
-		},
 	},
 
 	Components = {
@@ -740,7 +1814,7 @@ return {
 			weight = 280,
 			type = 'muzzle',
 			client = {
-                image = 'at_suppressor.png',
+				image = 'at_suppressor.png',
 				component = {
 					`COMPONENT_AT_PI_SUPP`,
 					`COMPONENT_AT_PI_SUPP_02`,
@@ -756,7 +1830,7 @@ return {
 			weight = 280,
 			type = 'muzzle',
 			client = {
-                image = 'at_suppressor.png',
+				image = 'at_suppressor.png',
 				component = {
 					`COMPONENT_AT_AR_SUPP`,
 					`COMPONENT_AT_AR_SUPP_02`,
@@ -804,7 +1878,7 @@ return {
 			type = 'magazine',
 			weight = 280,
 			client = {
-                image = 'at_clip_extended.png',
+				image = 'at_clip_extended.png',
 				component = {
 					`COMPONENT_APPISTOL_CLIP_02`,
 					`COMPONENT_CERAMICPISTOL_CLIP_02`,
@@ -816,7 +1890,7 @@ return {
 					`COMPONENT_SNSPISTOL_CLIP_02`,
 					`COMPONENT_SNSPISTOL_MK2_CLIP_02`,
 					`COMPONENT_VINTAGEPISTOL_CLIP_02`,
-                    `COMPONENT_TECPISTOL_CLIP_02`,
+					`COMPONENT_TECPISTOL_CLIP_02`,
 				},
 				usetime = 2500
 			}
@@ -827,7 +1901,7 @@ return {
 			type = 'magazine',
 			weight = 280,
 			client = {
-                image = 'at_clip_extended.png',
+				image = 'at_clip_extended.png',
 				component = {
 					`COMPONENT_ASSAULTSMG_CLIP_02`,
 					`COMPONENT_COMBATPDW_CLIP_02`,
@@ -846,7 +1920,7 @@ return {
 			type = 'magazine',
 			weight = 280,
 			client = {
-                image = 'at_clip_extended2.png',
+				image = 'at_clip_extended2.png',
 				component = {
 					`COMPONENT_ASSAULTSHOTGUN_CLIP_02`,
 					`COMPONENT_HEAVYSHOTGUN_CLIP_02`,
@@ -860,7 +1934,7 @@ return {
 			type = 'magazine',
 			weight = 280,
 			client = {
-                image = 'at_clip_extended2.png',
+				image = 'at_clip_extended2.png',
 				component = {
 					`COMPONENT_ADVANCEDRIFLE_CLIP_02`,
 					`COMPONENT_ASSAULTRIFLE_CLIP_02`,
@@ -886,7 +1960,7 @@ return {
 			type = 'magazine',
 			weight = 280,
 			client = {
-                image = 'at_clip_drum.png',
+				image = 'at_clip_drum.png',
 				component = {
 					`COMPONENT_GUSENBERG_CLIP_02`,
 					`COMPONENT_MG_CLIP_02`,
@@ -902,7 +1976,7 @@ return {
 			type = 'magazine',
 			weight = 280,
 			client = {
-                image = 'at_clip_extended2.png',
+				image = 'at_clip_extended2.png',
 				component = {
 					`COMPONENT_HEAVYSNIPER_MK2_CLIP_02`,
 					`COMPONENT_MARKSMANRIFLE_CLIP_02`,
@@ -917,7 +1991,7 @@ return {
 			type = 'magazine',
 			weight = 280,
 			client = {
-                image = 'at_clip_drum.png',
+				image = 'at_clip_drum.png',
 				component = {
 					`COMPONENT_COMBATPDW_CLIP_03`,
 					`COMPONENT_MACHINEPISTOL_CLIP_03`,
@@ -932,7 +2006,7 @@ return {
 			type = 'magazine',
 			weight = 280,
 			client = {
-                image = 'at_clip_drum.png',
+				image = 'at_clip_drum.png',
 				component = {
 					`COMPONENT_HEAVYSHOTGUN_CLIP_03`
 				},
@@ -945,7 +2019,7 @@ return {
 			type = 'magazine',
 			weight = 280,
 			client = {
-                image = 'at_clip_drum.png',
+				image = 'at_clip_drum.png',
 				component = {
 					`COMPONENT_ASSAULTRIFLE_CLIP_03`,
 					`COMPONENT_COMPACTRIFLE_CLIP_03`,
