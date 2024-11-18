@@ -167,6 +167,7 @@ return {
 				},
 				duration = 5000,
 				count = 2,
+				craftMessage = 'Crafting Tool', --optional
 			},
 			{
 				name = 'advancedlockpick',
